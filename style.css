@@ -409,8 +409,8 @@ a:hover {
 
 .note-card-header {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 10px;
   align-items: baseline;
   margin-bottom: 8px;
 }
@@ -428,6 +428,13 @@ a:hover {
   color: var(--soft-blue);
   font-size: 16px;
   font-weight: 600;
+}
+
+.note-date::before {
+  content: "|";
+  margin-right: 10px;
+  color: var(--muted);
+  font-weight: 500;
 }
 
 .note-card p {
@@ -502,11 +509,11 @@ a:hover {
   }
 
   .note-card-header {
-    display: block;
+    display: flex;
   }
 
   .note-date {
-    display: block;
-    margin-top: 4px;
+    display: inline;
+    margin-top: 0;
   }
 }
